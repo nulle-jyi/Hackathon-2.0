@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=100.0">
+    <title>Document</title>
+    <style>
+        #submitBtn{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h>
+        Emotion5
+        <script src="script.js"></script>
+    </h>
+    <p>
+        <!--image1-->
+        <form action="emotion6.html" method="get">
+            <label for="inputField"> answer?:</label>
+            <input type="text" id="inputField" placeholder="Please type the answer here." oninput="checkMatch()">
+            <button type="submit" id="submitBtn">Submit</button>
+        </form>
+        <script>
+            function checkMatch(){
+                const inputField = document.getElementById('inputField').value;
+                const Button = document.getElementById('submitBtn');
+                if(inputField === emotion5){
+                    Button.style.display = 'block';
+                }else{
+                    Button.style.display = 'none';
+                }
+                }
+            
+        </script>
+
+    </p>
+    
+</body>
+</html>
